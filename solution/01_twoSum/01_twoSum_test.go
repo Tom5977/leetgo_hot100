@@ -40,7 +40,7 @@ func TestTwoSum(t *testing.T) {
 
 	for _, tc := range testCases {
 		t.Run(tc.name, func(t *testing.T) {
-			result := TwoSum(tc.nums, tc.target)
+			result := twoSum(tc.nums, tc.target)
 			if !reflect.DeepEqual(result, tc.expected) {
 				t.Errorf("twoSum(%v, %d) = %v; want %v", tc.nums, tc.target, result, tc.expected)
 			}

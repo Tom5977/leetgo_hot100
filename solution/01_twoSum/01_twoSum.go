@@ -1,6 +1,6 @@
 ﻿package twoSum
 
-func TwoSum(nums []int, target int) []int {
+func twoSum(nums []int, target int) []int {
 	hashm := make(map[int]int)
 	res := []int{}
 	for i := 0; i < len(nums); i++ {
